@@ -198,6 +198,7 @@ session["error"] = No matches were found for "designer ballgown". Are you intere
 Spec was helpful to provide an overview of the whole agent and the specifics for each tool implemented within the agent. It provided a great detailed plan to help me define the entry point parsing the query in `description`, `price` and `size` for search_listing. It also provided a great start for the state management mechanism to be implemented.
 
 At the beginining, I was planning to pass error messages to the state['error'] key for `outfit_suggestion` and `fit_card`; however, in order to give a continuation to the conversation between the user and the agent, the only error was raised if an item was not found. With the last two tools, instead of stoping the loop in the case of getting a outfit_suggestion empty message, a predefined message is  returned stating about the item selected, and a generic fit card as stated on the **Error Handling** section. 
+
 ---
 
 ## AI Usage
